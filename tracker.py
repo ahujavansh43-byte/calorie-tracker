@@ -66,7 +66,7 @@ if save_option == "yes":
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     filename = "calorie_log.txt"
 
-    with open(filename, "a") as file:
+    with open(filename, "a",encoding="utf-8") as file:
         file.write("==========================================\n")
         file.write(f"Session Date & Time: {timestamp}\n")
         file.write("------------------------------------------\n")
